@@ -5,6 +5,27 @@ body {
 div {
     display: block;
 }
+.header {
+    background: #cbebe5;
+    font-size: 18pt;
+    color: #035d4c;
+
+}
+a:link {
+  color: #035d4c;
+  border-bottom: 1px dashed;
+}
+a:visited {
+  color: #035d4c;
+}
+a:hover {
+  color: #035d4c;
+  border-bottom: .07em solid;
+}
+a:active {
+  color: #035d4c;
+  border-bottom: 1px dashed;
+}
 
 .archive {
     width: 100%;
@@ -17,9 +38,6 @@ div {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
-}
-.header {
-    background: #cbebe5;
 }
 
 .header a {
@@ -71,3 +89,31 @@ div {
     opacity: 0;
     z-index: -1; /* это свойство «отодвигает» элемент на задний план */
  }
+.icons-for-parallax {
+ margin-top: 100px;
+ margin-bottom: 100px;
+ height: 530px;
+ position: relative;
+}
+.icons-for-parallax img {
+ /* здесь находятся общие для всех картинок стили */
+ position: absolute;
+ top: 0;
+}
+.icon-for-parallax-first {
+ margin-top: 200px;
+ z-index: 3; /* эта картинка на переднем плане, у неё больший z-index
+*/
+}
+.icon-for-parallax-second {
+ width: 175px; /* уменьшить ширину для картинки, чтобы визуально */
+ /* находилась дальше для пользователя */
+ margin-top: 100px; /* эта картинка слегка смещена вправо и вниз */
+ margin-left: 80px; /* за счет левой и верхней границ */
+ z-index: 2;
+}
+.icon-for-parallax-third{
+ width: 150px;
+ margin-left: 160px;
+ z-index: 1; /* эта картинка на заднем плане, у неё меньший z-index */
+}
