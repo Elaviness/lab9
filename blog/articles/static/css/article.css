@@ -5,26 +5,25 @@ body {
 div {
     display: block;
 }
-.header {
-    background: #cbebe5;
-    font-size: 18pt;
-    color: #035d4c;
 
+.service-title {
+    font-size: 24pt;
+    color: #035d4c;
 }
-a:link {
-  color: #035d4c;
-  border-bottom: 1px dashed;
+
+.register-link {
+    display: inline;
+    font-size: 20pt;
 }
+
 a:visited {
-  color: #035d4c;
+color:#2E8B57;
+text-decoration:none
 }
+
 a:hover {
-  color: #035d4c;
-  border-bottom: .07em solid;
-}
-a:active {
-  color: #035d4c;
-  border-bottom: 1px dashed;
+color:#2E8B57;
+text-decoration: underline
 }
 
 .archive {
@@ -38,6 +37,9 @@ a:active {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
+}
+.header {
+    background: #cbebe5;
 }
 
 .header a {
@@ -55,7 +57,7 @@ a:active {
 
 .center_pos {
     text-align: center;
-    position: relative;
+    z-index: 2;
 }
 
 .article-text {
@@ -101,19 +103,22 @@ a:active {
  top: 0;
 }
 .icon-for-parallax-first {
- margin-top: 200px;
- z-index: 3; /* эта картинка на переднем плане, у неё больший z-index
+ margin-top: 150px;
+ z-index: 2; /* эта картинка на переднем плане, у неё больший z-index
 */
 }
 .icon-for-parallax-second {
- width: 175px; /* уменьшить ширину для картинки, чтобы визуально */
+ width: 125px; /* уменьшить ширину для картинки, чтобы визуально */
  /* находилась дальше для пользователя */
  margin-top: 100px; /* эта картинка слегка смещена вправо и вниз */
  margin-left: 80px; /* за счет левой и верхней границ */
- z-index: 2;
+ z-index: 1;
 }
 .icon-for-parallax-third{
- width: 150px;
+ width: 110px;
+ margin-top: 50px;
  margin-left: 160px;
- z-index: 1; /* эта картинка на заднем плане, у неё меньший z-index */
+ z-index: 0; /* эта картинка на заднем плане, у неё меньший z-index */
 }
+
+

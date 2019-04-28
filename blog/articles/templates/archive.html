@@ -6,25 +6,28 @@
     </head>
     <body>
         <div class="header">
-            <p class="center_pos"><img id="logo" src="{{ STATIC_URL }}img/django-logo-.png" height="100" alt=""/></p>
-                <div class="header-text-area" style="float: left">
-                    <p class="service-title">Коллективный блог</p>
-                    <a href="/register/" class="register-link" style="float: left">Регистрация</a>
-                    <a href="/login/" class="register-link">Вход</a>
-                </div>
-                <div class="icons-for-parallax">
-                     <img class="icon-for-parallax-first" src="{{ STATIC_URL }}img/article-icon-for-parallax.png">
-                     <img class="icon-for-parallax-second" src="{{ STATIC_URL }}img/article-icon-for-parallax.png">
-                    <img class="icon-for-parallax-third" src="{{ STATIC_URL }}img/article-icon-for-parallax.png">
-                </div>
+             <div class="center_pos">
+                 <img id="logo" src="{{ STATIC_URL }}img/django-logo-.png" height="100">
+             </div>
+             <div class="header-text-area">
+                 <p class="service-title">Коллективный блог</p>
+                 <a href="/registration" class="register-link">Регистрация</a>
+                 <a href="/auth" class="register-link" style="float: left">Вход</a>
+             </div>
+             <div class="icons-for-parallax">
+                 <img class="icon-for-parallax-first" src="{{ STATIC_URL }}img/article-icon-for-parallax.png">
+                 <img class="icon-for-parallax-second" src="{{ STATIC_URL }}img/article-icon-for-parallax.png">
+                 <img class="icon-for-parallax-third" src="{{ STATIC_URL }}img/article-icon-for-parallax.png">
+             </div>
         </div>
+
         <div  class="archive">
             {% for post in posts %}
             <div class="one-post">
-                <p class="fold-button" style="float: right">Свернуть</p>
                     <h2 class="post-title">
                         <a href="/article/{{ post.id }}">{{ post.title }}</a>
                     </h2>
+                    <p class="fold-button" style="fold:right">Свернуть</p>
                 <div class="article-info">
                     <div class="article-author">{{ post.author.username }}</div>
                     <div class="article-created-date">{{ post.created_date }}</div>
@@ -37,5 +40,6 @@
         <script src="{{ STATIC_URL }}js/jquery-3.4.0.min.js"></script>
         <script src="{{ STATIC_URL }}js/fold-post.js"></script>
         <script src="{{ STATIC_URL }}js/highlight-post.js"></script>
+        <script src="{{ STATIC_URL }}js/parallax.js"></script>
     </body>
 </html>
