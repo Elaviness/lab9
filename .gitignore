@@ -105,3 +105,4 @@ venv.bak/
 # mypy
 .mypy_cache/
 
+!/blog/articles/static/js/
