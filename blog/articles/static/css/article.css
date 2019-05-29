@@ -1,36 +1,36 @@
 body {
-    background-color: #97dbce;
+    background-color: #7fffd4;
+    color: #2E8B57;
 }
 
 div {
     display: block;
 }
 
-.service-title {
-    font-size: 24pt;
-    color: #035d4c;
+.archive {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    color: #2E8B57;
 }
 
-.register-link {
-    display: inline;
-    font-size: 20pt;
+.header {
+    display: inline-block;
+    width: 100%;
+    background-color: #cbebe5
+}
+
+img#logo {
+    top: 0;
+    position: relative;
+}
+
+a:link {
+    color: #2E8B57;
 }
 
 a:visited {
-color:#2E8B57;
-text-decoration:none
-}
-
-a:hover {
-color:#2E8B57;
-text-decoration: underline
-}
-
-.archive {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    color: #035d4c;
+    color: #2E8B57;
 }
 
 .article {
@@ -38,14 +38,7 @@ text-decoration: underline
     margin-left: auto;
     margin-right: auto;
 }
-.header {
-    background: #cbebe5;
-}
 
-.header a {
-    float: right;
-    text-align: right;
-}
 .article-info div {
     display: inline;
 }
@@ -57,27 +50,29 @@ text-decoration: underline
 
 .center_pos {
     text-align: center;
-    z-index: 2;
 }
 
 .article-text {
     text-align: justify;
-}
-.post-title {
-    font-size: 18pt;
 }
 
 .one-post {
     position: relative;
 }
 
-.one-post.folded .article-author{
+.post-title {
+    font-size: 20pt;
+}
+
+.one-post.folded .article-author {
     display: none;
 }
-.one-post.folded .article-created-date{
+
+.one-post.folded .article-created-date {
     display: none;
 }
-.one-post.folded .article-text{
+
+.one-post.folded .article-text {
     display: none;
 }
 
@@ -87,38 +82,73 @@ text-decoration: underline
     left: 0;
     width: 100%;
     height: 100%;
+    /*background: #28beff;*/
     background: black;
     opacity: 0;
     z-index: -1; /* это свойство «отодвигает» элемент на задний план */
- }
-.icons-for-parallax {
- margin-top: 100px;
- margin-bottom: 100px;
- height: 530px;
- position: relative;
-}
-.icons-for-parallax img {
- /* здесь находятся общие для всех картинок стили */
- position: absolute;
- top: 0;
-}
-.icon-for-parallax-first {
- margin-top: 150px;
- z-index: 2; /* эта картинка на переднем плане, у неё больший z-index
-*/
-}
-.icon-for-parallax-second {
- width: 125px; /* уменьшить ширину для картинки, чтобы визуально */
- /* находилась дальше для пользователя */
- margin-top: 100px; /* эта картинка слегка смещена вправо и вниз */
- margin-left: 80px; /* за счет левой и верхней границ */
- z-index: 1;
-}
-.icon-for-parallax-third{
- width: 110px;
- margin-top: 50px;
- margin-left: 160px;
- z-index: 0; /* эта картинка на заднем плане, у неё меньший z-index */
 }
 
+
+.head-title {
+    float: right;
+    width: 50%;
+    height: 200px;
+}
+
+
+.service_title {
+    font-size: 30pt;
+}
+
+.create_link {
+    float: right;
+    font-size: 18pt;
+    margin-left: 5%;
+    width: 30%;
+}
+
+.reg_link {
+    float: right;
+    font-size: 18pt;
+    width: 30%;
+}
+
+.login_link {
+    float: right;
+    font-size: 18pt;
+    width: 30%;
+}
+
+.parallax_group {
+    float: left;
+    width: 50%;
+    top: -50px;
+    position: relative;
+}
+
+.parallax_group img {
+    position: absolute;
+    top: 0;
+}
+
+.first_img {
+    margin-top: 80px;
+    margin-left: 50px;
+    width: 100px;
+    z-index: 3;
+}
+
+.second_img {
+    width: 70px; /* уменьшить ширину для картинки, чтобы визуально */
+    margin-top: 62px; /*эта картинка слегка смещена вправо и вниз*/
+    margin-left: 100px; /* за счет левой и верхней границ */
+    z-index: 2;
+}
+
+.third_img {
+    width: 60px;
+    margin-top: 35px;
+    margin-left: 140px;
+    z-index: 1; /* эта картинка на заднем плане, у неё меньший z-index */
+}
 
